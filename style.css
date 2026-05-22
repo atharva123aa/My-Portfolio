@@ -1,0 +1,7 @@
+:root  { --white:#ffffff; --black:#000000; --nav: linear-gradient(120deg,
+    rgba(29, 11, 80, 0.92),  RGBA(261, 10,304,0.76), rgba(160, 125, 243, 0.66));
+     --top:  #0b3056;
+     --mid:#104122;
+     --bottom: #7ed8ff;
+    --other:# rgba  (255,255,255,0.29);}
+    body{background-color: var(--bottom);}
