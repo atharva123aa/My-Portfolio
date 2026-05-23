@@ -45,15 +45,48 @@ border-color:white;} nav ul li a:hover{
     border-color:rgba(255,255,255,0.18); border-style:solid; border-radius:27px;
     backdrop-filter:  blur(13px);
 box-shadow: 0 25px 50px rgba(0,0,0,0.23);}
-    .hero-cta-heading{text-align:left; font-style: clamp(2.3rem,5vw,3.2rem); margin-bottom: 17px;
+    .hero-cta-heading{text-align:CENTER; font-style: clamp(2.3rem,5vw,3.2rem); margin-bottom: 17px;
         letter-spacing: -0.04em;} 
     .hero-para{
-        text-align:left;
+        text-align:center;
         color:white; max-width:701px; 
         font-size: 1.06rem;
          line-height: 1.75;
          color:rgba(255,255,255,0.92) ;
     margin-bottom: 29px ;}
+    .hero-button-projects { display:inline-flex; max-width: 123px; padding:12px  12px; 
+
+        border-radius:995px;
+
+        border:1px; border-style:dotted; border-color:rgba(255,255,255,0.9);
+        color:#ffffff;
+        text-decoration:none;
+        transition: translateY(-2px) 0.4s ease,background 0.3s ease; text-align:CENTER; FLEX-DIRECTION:ROW;}
+        .hero-button-contact{ display:inline-flex; max-width:120px; padding:12px 13px; border-radius: 999px; border:2px; 
+            border-style:solid;border-color: rgba(255,255,255,0.92);
+            color:#f0ffff; text-decoration:overline; transition:0.3s ease, background 0.3s ease; 
+        text-align: center; flex-direction:Row;
+        }   .hero-button-projects:hover{ background: rgba(245,244,255,0.14); transform:translateY(-2px); transition:0.3s ease 
+            background 0.3s ease} h2{
+                text-align:center;
+                color:wheat;}
+                .project{padding:0 64px 123px;}
+                .project-grid{display:grid;
+                    gap:41px; 
+                    grid-template-columns:
+                    repeat(auto-fit,minimax(360px,1fr));}   .project-card{ background:#e3e5ed;
+                                                              border-radius:30px; margin:10px;
+                                                              padding:45px; 
+                                                              box-shadow: 0 20px 43px rgba(0,0,0,0.35); backdrop-filter: blur(9px);
+                                                        transition:  transform 0.3s ease, box-shadow:0.2s ease;}
+                    .project-card:hover{ transform:translateY(-5px); box-shadow: 0 30px 70px rgba (0,0,0,0.5);}
+                    .project-card-link { text-decoration:none; color:inherit; display:block;}
+                    .project-card h3 {
+                    margin:0 0 17px; font-size:50px;
+                    color:#000000;}
+                  .project-card p { margin:0; font-size:24px; line-height:1.5; color:#000;}
+
+
 
     
     
