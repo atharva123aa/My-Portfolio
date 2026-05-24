@@ -7,12 +7,12 @@ var d1=document.getElementById('dot1')
 function lerp(a,b,t){return a+(b-a)*t }
 
 
-  doocument.addEventListener('mousemove',function(e){
+  document.addEventListener('mousemove',function(e){
     mx=e.clientX
     my=e.clientY})
     document.addEventListener('mousedown',function(){
         document.body.classList.add('clicking')})
-        doocument.addEventListener('mouseup',function(){
+        document.addEventListener('mouseup',function(){
             document.body.classList.remove('clicking')})
             function loop() {
                 x1=lerp(x1,mx,0.18)
