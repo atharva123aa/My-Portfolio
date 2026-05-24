@@ -10,7 +10,7 @@ function lerp(a,b,t){return a+(b-a)*t }
   doocument.addEventListener('mousemove',function(e){
     mx=e.clientX
     my=e.clientY})
-    doocument.addEventListener('mousedown',function(){
+    document.addEventListener('mousedown',function(){
         document.body.classList.add('clicking')})
         doocument.addEventListener('mouseup',function(){
             document.body.classList.remove('clicking')})
