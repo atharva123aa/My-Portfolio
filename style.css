@@ -150,6 +150,19 @@ grid-template-columns: repeat(auto-fit,minmax(360px,1fr));}
     .image { max-width:476px; 
     max-height:Auto; display:inline-flex; align-items:right; transition: 0.3s ease, background 0.3s ease;
     margin:15px;}
+* {cursor:none;}
+.trail-dot { position:fixed;
+    border-radius:50%; pointer-events:none; transform: translate(-48%,-42%); z-index:9999;}
+ #dot1{width:10px; height:10px; background:#ffe;}
+ #dot2{width: 5px; height:8px; background  :rgba(255,255,255,0.6);}
+
+ #dot3
+
+ {width:4px; height:4px; background: rgba(255,255,255,0.6);} body.clicking #dot1 {background:#ff1fff;
+    transform: translate(-50% , -50%) scale(1.7);}
+
+ 
+ /*todo-add more custom dots*/
 
 
 
