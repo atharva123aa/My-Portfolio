@@ -1,15 +1,15 @@
 body {min-height:100vh; background:radial-gradient(circle at top left, 
     rgba(255,255,255,0.12), transparent 30%), 
-               linear-gradient(180deg, #0ed1 0% #01579b 100%); color:#ffe; font-family: 'Courier Prime', Helvetica,Verdana; margin:0; }
+               linear-gradient(180deg, #00e0d1 0%, #01579b 100%); color:#ffe; font-family: 'Courier Prime', Helvetica,Verdana; margin:0; }
 nav{background: linear-gradient(134deg,#191970 0%, #ffb300 100%
     ); box-shadow: 0  4px 6px rgba(0,0,0,0.2); position:STICKY;Top:0; 
     z-index:101;
     display:flex;
-    JUSTify-content:space-between; align-items:centre; padding: 21px 23px; 
+    JUSTify-content:space-between; align-items:center; padding: 21px 23px; 
     border-radius:6px;
 }
 nav h1{ color: #E2E5ED; MARGIN:0; PADDING:15PX;
-    FONT-FAMILY:'Monospace', Verdana,Courier; font-size:1.6em; white-space:nowrap;}
+    FONT-FAMILY:Monospace, Verdana,Courier; font-size:1.6em; white-space:nowrap;}
      nav div{
         display:flex;
         align-items:center;
@@ -18,7 +18,7 @@ nav h1{ color: #E2E5ED; MARGIN:0; PADDING:15PX;
      }
      nav ul  {list-style-type: none ;
      margin:0;
-     padding: 22;display:flex;
+     padding: 22px;display:flex;
      display:flex;
      GAP:10PX; ALIGN-ITEMS:CENTER;
      BACKGROUND:INHERIT;}
@@ -33,7 +33,7 @@ nav ul li{margin:0;}
 border-color:white;} nav ul li a:hover{
 
     background-color: rgba(255,255,255,0.2); color:#ffeb3b;
-    transform:translate(2px);
+    transform:translate(-2px);
 }
 .hero-cta{ display:flex;
     flex-direction:column;
@@ -45,15 +45,20 @@ border-color:white;} nav ul li a:hover{
     border-color:rgba(255,255,255,0.18); border-style:solid; border-radius:27px;
     backdrop-filter:  blur(13px);
 box-shadow: 0 25px 50px rgba(0,0,0,0.23);}
-    .hero-cta-heading{text-align:CENTER; font-style: clamp(2.3rem,5vw,3.2rem); margin-bottom: 17px;
+    .hero-cta-heading{text-align:CENTER; font-size: clamp(2.3rem,5vw,3.2rem); margin-bottom: 17px;
         letter-spacing: -0.04em;} 
     .hero-para{
         text-align:center;
         color:white; max-width:701px; 
         font-size: 1.06rem;
          line-height: 1.75;
-         color:rgba(255,255,255,0.92) ;
-    margin-bottom: 29px ;}
+         color:#223 ;
+    margin-bottom: 0 auto  27px;}
+    .hero-para-2 {text-align:center;
+        color:White;
+
+    max-width:700px;
+margin:0 auto 27px;}
     .hero-button-projects { display:inline-flex; max-width: 123px; padding:12px  12px; 
 
         border-radius:995px;
@@ -61,30 +66,93 @@ box-shadow: 0 25px 50px rgba(0,0,0,0.23);}
         border:1px; border-style:dotted; border-color:rgba(255,255,255,0.9);
         color:#ffffff;
         text-decoration:none;
-        transition: translateY(-2px) 0.4s ease,background 0.3s ease; text-align:CENTER; FLEX-DIRECTION:ROW;}
+        transition:  0.4s ease,background 0.3s ease; text-align:CENTER; FLEX-DIRECTION:ROW;}
         .hero-button-contact{ display:inline-flex; max-width:120px; padding:12px 13px; border-radius: 999px; border:2px; 
             border-style:solid;border-color: rgba(255,255,255,0.92);
-            color:#f0ffff; text-decoration:overline; transition:0.3s ease, background 0.3s ease; 
+            color:#f0ffff; text-decoration:overline; transition: transform 0.3s ease, background 0.3s ease; 
         text-align: center; flex-direction:Row;
-        }   .hero-button-projects:hover{ background: rgba(245,244,255,0.14); transform:translateY(-2px); transition:0.3s ease 
-            background 0.3s ease} h2{
+        }
+        .hero-button-hobbies{display:inline-flex; 
+        max-width: 130px; padding:12px 12px; border:1PX;
+        border-radius: 991px;
+        border-style:groove;
+        border-color: rgba(255,255,255,0.9); COLOR:#FF1FFF; TEXT-DECORATION:NONE; TRANSITION:0.3S EASE, BACKGROUND 0.4S EASE;
+        TEXT-ALIGN:LEFT; FLEX-DIRECTION:ROW;
+  }
+              
+            
+            .hero-button-projects:hover { background: rgba(245,244,255,0.14); transform:translateY(-2px); transition:0.3s ease 
+            background 0.3s ease}
+            .hero-button-contact:hover {
+                background: rgba(255, 255, 255, 0.14);
+                transform: translateY(-2px);
+                transition: 0.3s ease background 0.3s ease
+            }
+            .hero-button-hobbies:hover{background: rgba(255, 255, 255, 0.14);
+                transform: translateY(-2px);
+                transition: 0.3s ease, background 0.3s ease} .hobby-grid {display:grid;  gap:13px;
+
+grid-template-columns: repeat(auto-fit,minmax(360px,1fr));}
+                .hobby-card{border-radius:27px; margin :10px; padding:47px; box-shadow:0 20px 47px rgba (0,0,0,0.35);
+                    backdrop-filter:  blur(9px);   transition: 0.3s ease, box-shadow 0.3s ease; 
+                    display:flex;
+                    flex-direction:column;
+                    align-items:center; text-align:center;}
+                    .hobby-card:hover  {transform: translateY(-5px); 
+                        box-shadow:0 30px 72px  (123,215,278,0.2);
+                        border:3px; border-style:solid; border-color: #FF1FFF;}
+           .hobby-card h3{ margin:14px; font-size:31px; color:#f01;}     
+            .hobby-card p 
+            { margin:0; font-size:22px; 
+                line-height:1.6; color:#f01; }   
+                        h2{
                 text-align:center;
                 color:wheat;}
-                .project{padding:0 64px 123px;}
+                .project{padding:64px 82px;}
                 .project-grid{display:grid;
                     gap:41px; 
                     grid-template-columns:
-                    repeat(auto-fit,minimax(360px,1fr));}   .project-card{ background:#e3e5ed;
+                    repeat(auto-fit,minmax(360px,1fr));}   .project-card{ background:#e3e5ed;
                                                               border-radius:30px; margin:10px;
                                                               padding:45px; 
                                                               box-shadow: 0 20px 43px rgba(0,0,0,0.35); backdrop-filter: blur(9px);
-                                                        transition:  transform 0.3s ease, box-shadow:0.2s ease;}
-                    .project-card:hover{ transform:translateY(-5px); box-shadow: 0 30px 70px rgba (0,0,0,0.5);}
+                                                        transition:   0.3s ease, box-shadow 0.3s ease; display:flex;  flex-direction:  row;}
+                    .project-card:hover{ transform:translateY(-5px); box-shadow: 0 30px 70px rgba(103,109,201,0.3);
+                    border:4px; border-style:ridge; border-color:#5cd8ee; .image{ transform: translateY(-14pX); max-width:554px; max-height:auto;}}
                     .project-card-link { text-decoration:none; color:inherit; display:block;}
                     .project-card h3 {
-                    margin:0 0 17px; font-size:50px;
-                    color:#000000;}
-                  .project-card p { margin:0; font-size:24px; line-height:1.5; color:#000;}
+                    margin:14px; font-size:50px;
+                    color:#000000; max-width:300px;}
+                  .project-card p { margin:0; font-size:24px; line-height:1.5; color:#000 ;max-width:453px;}
+
+.contacts { list-style-type:none; 
+    display:inline-flex; flex-direction:row;} 
+    .contact-grid{ display:grid; grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+        gap:21px;
+        max-width:700px;
+        margin:20px auto 0;}
+    .contact-card{DISPLAY:FLEX; ALIGN-ITEMS:CENTRE; PADDING:10PX;
+        BACKGROUND:RGBA(255,255,255,0.1); BORDER:1PX;  BORDER-STYLE:SOLID; BORDER-COLOR: rgBA(255,255,255,0.2);  BORDER-RADIUS:16PX; text-decoration: NONE; COLOR:#E2E5ED;
+        TRANSITION:ALL 0.3S EASE;
+        BACKDROP-FILTER: BLUR(10PX); WIDTH:AUTO;
+         HEIGHT:AUTO;
+
+
+    }
+    .contact-card:hover {transform:translateY(-5px); background:rgba(255, 255, 255, 0.14);
+        border-color:rgba(255, 255, 255, 0.4); box-shadow:0  11px 27px rgba(0,0,0,0.2);}
+
+    .contact-icon { font-size:2.6rem; margin-right:17px; flex-shrink:0;}
+    .contact-card.github:hover{ border-color:#6cc644; box-shadow: 0 10px 20px 30px rgba(108,201,54,0.3);
+    } 
+    .contact-card.slack:hover{ border-color:#4a1de4; box-shadow: 0 10px 20px 30px rgba(208,201,54,0.2);   }
+    .contact-card.insta:hover{ border-color:#ff1fff; box-shadow: 0 10px 20px 30px rgba(208,75,54,0.2);   }
+    .image { max-width:476px; 
+    max-height:Auto; display:inline-flex; align-items:right; transition: 0.3s ease, background 0.3s ease;
+    margin:15px;}
+
+
+
 
 
 
