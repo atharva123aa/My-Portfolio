@@ -33,7 +33,7 @@ nav ul li{margin:0;}
 border-color:white;} nav ul li a:hover{
 
     background-color: rgba(255,255,255,0.2); color:#ffeb3b;
-    transform:translate(-2px);
+    transform:translateY(-2px);
 }
 .hero-cta{ display:flex;
     flex-direction:column;
@@ -81,25 +81,35 @@ margin:0 auto 27px;}
   }
               
             
-            .hero-button-projects:hover { background: rgba(245,244,255,0.14); transform:translateY(-2px); transition:0.3s ease 
-            background 0.3s ease}
+            .hero-button-projects:hover { background: rgba(245,244,255,0.14); transform:translateY(-2px); transition:0.3s ease ,
+            background 0.3s ease;}
             .hero-button-contact:hover {
                 background: rgba(255, 255, 255, 0.14);
                 transform: translateY(-2px);
-                transition: 0.3s ease background 0.3s ease
+                transition: 0.3s ease ,background 0.3s ease;
             }
             .hero-button-hobbies:hover{background: rgba(255, 255, 255, 0.14);
                 transform: translateY(-2px);
-                transition: 0.3s ease, background 0.3s ease} .hobby-grid {display:grid;  gap:13px;
+                transition: 0.3s ease, background 0.3s ease;} 
+                .hero-button-interact {
+                    display:inline-flex; max-width:132px; padding:12px 12px; border-radius:996px; 
+                     border:1px dotted rgba(255,2255,255,0.9);
+                      color:#ffffff;
+                      text-decoration:none; transition:0.4s ease, background 0.3s ease;
+                      text-align:center;}
+                      .hero-button-interact:hover  {background:rgba(245,254,255,0.15);
+                        transform:translateY(-2PX);}
+                
+                .hobby-grid {display:grid;  gap:13px;
 
 grid-template-columns: repeat(auto-fit,minmax(360px,1fr));}
-                .hobby-card{border-radius:27px; margin :10px; padding:47px; box-shadow:0 20px 47px rgba (0,0,0,0.35);
+                .hobby-card{border-radius:27px; margin :10px; padding:47px; box-shadow:0 20px 47px rgba(0,0,0,0.35);
                     backdrop-filter:  blur(9px);   transition: 0.3s ease, box-shadow 0.3s ease; 
                     display:flex;
                     flex-direction:column;
                     align-items:center; text-align:center;}
                     .hobby-card:hover  {transform: translateY(-5px); 
-                        box-shadow:0 30px 72px  (123,215,278,0.2);
+                        box-shadow:0 30px 72px  rgba(123,215,255,0.2);
                         border:3px; border-style:solid; border-color: #FF1FFF;}
            .hobby-card h3{ margin:14px; font-size:31px; color:#f01;}     
             .hobby-card p 
@@ -117,8 +127,17 @@ grid-template-columns: repeat(auto-fit,minmax(360px,1fr));}
                                                               padding:45px; 
                                                               box-shadow: 0 20px 43px rgba(0,0,0,0.35); backdrop-filter: blur(9px);
                                                         transition:   0.3s ease, box-shadow 0.3s ease; display:flex;  flex-direction:  row;}
-                    .project-card:hover{ transform:translateY(-5px); box-shadow: 0 30px 70px rgba(103,109,201,0.3);
-                    border:4px; border-style:ridge; border-color:#5cd8ee; .image{ transform: translateY(-14pX); max-width:554px; max-height:auto;}}
+                                                        .project-card:hover{
+                                                            transform:translateY(-5px);
+                                                            box-shadow:0 30px 70px rgba(103,109,201,0.3);
+                                                            border:4px ridge #5cd8ee;
+                                                        }
+                                                        
+                                                        .project-card:hover .image{
+                                                             transform:translateY(-14px);
+                                                            max-width:554px;
+                                                            height:auto;
+                                                        }
                     .project-card-link { text-decoration:none; color:inherit; display:block;}
                     .project-card h3 {
                     margin:14px; font-size:50px;
@@ -131,7 +150,7 @@ grid-template-columns: repeat(auto-fit,minmax(360px,1fr));}
         gap:21px;
         max-width:700px;
         margin:20px auto 0;}
-    .contact-card{DISPLAY:FLEX; ALIGN-ITEMS:CENTRE; PADDING:10PX;
+    .contact-card{DISPLAY:FLEX; ALIGN-ITEMS:CENTer; PADDING:10PX;
         BACKGROUND:RGBA(255,255,255,0.1); BORDER:1PX;  BORDER-STYLE:SOLID; BORDER-COLOR: rgBA(255,255,255,0.2);  BORDER-RADIUS:16PX; text-decoration: NONE; COLOR:#E2E5ED;
         TRANSITION:ALL 0.3S EASE;
         BACKDROP-FILTER: BLUR(10PX); WIDTH:AUTO;
@@ -148,9 +167,10 @@ grid-template-columns: repeat(auto-fit,minmax(360px,1fr));}
     .contact-card.slack:hover{ border-color:#4a1de4; box-shadow: 0 10px 20px 30px rgba(208,201,54,0.2);   }
     .contact-card.insta:hover{ border-color:#ff1fff; box-shadow: 0 10px 20px 30px rgba(208,75,54,0.2);   }
     .image { max-width:476px; 
-    max-height:Auto; display:inline-flex; align-items:right; transition: 0.3s ease, background 0.3s ease;
+    height:Auto; display:inline-flex; align-items:right; transition: 0.3s ease, background 0.3s ease;
     margin:15px;}
-* {cursor:none;}
+body.custom-cursor 
+    * {cursor:none;}
 .trail-dot { position:fixed;
     border-radius:50%; pointer-events:none; transform: translate(-48%,-42%); z-index:9999;}
  #dot1{width:10px; height:10px; background:#ffe;}
@@ -162,8 +182,7 @@ grid-template-columns: repeat(auto-fit,minmax(360px,1fr));}
     transform: translate(-50% , -50%) scale(1.7);}
 
  
- /*todo-add more custom dots*/
-
+ /*todo-add more custom dots*/ 
 
 
 
